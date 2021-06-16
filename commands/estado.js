@@ -7,7 +7,6 @@ module.exports = {
         .setTitle('Horniness Meter')
         .setDescription(`Horniness Counter stalemate, the counter is currently ${HornyCounter}`)
         .setFooter('Oh Good.')
-
         message.channel.send(newEmbed);
     }
 
