@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const prefix = 'h!';
 
 const fs = require('fs');
-client.msgs = require ("./counter.json");
+client.msgs = require ("./HornyCounter.json");
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
