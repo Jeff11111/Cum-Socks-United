@@ -33,7 +33,7 @@ client.on('message', message =>{
 
     }
     
-})
+});
 
 client.login('ODU0MjI4MjYxNzE3Mjc4NzYw.YMg4EA.1TsscVhtxfpjomzc1yLWShR0kHs');
 
