@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#B12E50')
         .setTitle('Caught you!')
-        .setDescription(`Horniness Counter increased, the counter is currently 1`)
+        .setDescription(`Horniness Counter increased, the counter is currently ${HornyCounter}`)
         .setFooter('Oh God!')
 
         message.channel.send(newEmbed);
