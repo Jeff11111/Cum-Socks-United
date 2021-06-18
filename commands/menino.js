@@ -11,7 +11,7 @@ module.exports = {
       .setDescription(
         `Horniness Counter increased, the counter is currently ${HornyCounter["count"]}`
       )
-      .setFooter("Oh God!");
+      .setFooter("Oh God!", 'https://cdn.discordapp.com/emojis/681543213990805561.png?v=1');
     message.channel.send(newEmbed);
   },
 };
