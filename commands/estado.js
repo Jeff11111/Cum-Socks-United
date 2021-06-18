@@ -7,7 +7,7 @@ module.exports = {
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#00FF46")
       .setTitle("Horniness Meter")
-      .setThumbnail('https://media.discordapp.net/attachments/839740718690861096/855294937359843358/unknown.jpg?width=350&height=468')
+      .setThumbnail('https://media.discordapp.net/attachments/839740718690861096/855295748434690078/unknown.png?width=254&height=214')
       .setDescription(
         `Horniness Counter stalemate, the counter is currently ${HornyCounter["count"]}`
       )

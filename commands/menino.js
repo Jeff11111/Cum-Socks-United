@@ -8,7 +8,7 @@ module.exports = {
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#B12E50")
       .setTitle("Caught you!")
-      .setThumbnail('https://cdn.discordapp.com/attachments/839740718690861096/855294937359843358/unknown.jpg')
+      .setThumbnail('https://media.discordapp.net/attachments/839740718690861096/855295748434690078/unknown.png?width=254&height=214')
       .setDescription(
         `Horniness Counter exceeded! the counter is currently ${HornyCounter["count"]}`
       )
