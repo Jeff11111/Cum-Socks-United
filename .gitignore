@@ -1,4 +1,4 @@
-# Configs
+# Ignores the config.json, because I don't want my token to be stolen.
 config.json
 
 # Logs
