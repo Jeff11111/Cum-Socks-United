@@ -5,8 +5,9 @@ module.exports = {
   description: "I hate it here.",
   execute(message, args, Discord) {
     const newEmbed = new Discord.MessageEmbed()
-      .setColor("#B12E50")
+      .setColor("#00FF46")
       .setTitle("Horniness Meter")
+      .setThumbnail('')
       .setDescription(
         `Horniness Counter stalemate, the counter is currently ${HornyCounter["count"]}`
       )

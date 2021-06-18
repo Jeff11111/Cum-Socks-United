@@ -9,7 +9,8 @@ module.exports = {
       .setColor("#B12E50")
       .setTitle("Caught you!")
       .setDescription(
-        `Horniness Counter increased, the counter is currently ${HornyCounter["count"]}`
+        `Horniness Counter exceeded! the counter is currently ${HornyCounter["count"]}`
+        `<########################################################################-->`
       )
       .setFooter("Oh God!", 'https://cdn.discordapp.com/emojis/681543213990805561.png?v=1');
     message.channel.send(newEmbed);
