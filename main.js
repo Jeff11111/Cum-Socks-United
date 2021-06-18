@@ -19,9 +19,6 @@ for (const file of commandFiles) {
   if (command.name) client.commands.set(command.name, command);
 }
 
-// A collection to keep the command cooldowns in.
-const cooldowns = new Discord.Collection();
-
 client.once("ready", () => {
   console.log("Horny Boy Counter is online, God Save Us.");
 });
@@ -34,11 +31,10 @@ client.on("message", (message) => {
 
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
-  const command =
-    client.commands.get(commandName) ||
-    client.commands.find(
-      (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
-    );
+  const command = client.commands.get(commandName)
+
+  if (!command)
+    return;
 
   //If there's nothing after the prefix, do nothing.
   if (message.content.slice(prefix.length).trim().length === 0) {
@@ -47,7 +43,7 @@ client.on("message", (message) => {
 
   //Try to execute the command.
   try {
-    command.execute(message);
+    command.execute(message, args, Discord);
   } catch (error) {
     console.error(error);
   }

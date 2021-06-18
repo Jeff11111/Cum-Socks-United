@@ -1,18 +1,17 @@
 var HornyCounter = require("../counter.js");
 
 module.exports = {
-  name: "estado",
+  name: "hornystatus",
   description: "I hate it here.",
   execute(message, args, Discord) {
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#B12E50")
       .setTitle("Horniness Meter")
       .setDescription(
-        `Horniness Counter stalemate, the counter is currently ${HornyCounter}`
+        `Horniness Counter stalemate, the counter is currently ${HornyCounter["count"]}`
       )
       .setFooter("Oh Good.");
     message.channel.send(newEmbed);
-    HornyCounter.sub(1);
   },
 };
 
