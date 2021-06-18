@@ -1,4 +1,4 @@
-var HornyCounter = require("./counter.js");
+var HornyCounter = require("../counter.js");
 
 module.exports = {
   name: "menino",
