@@ -11,7 +11,7 @@ module.exports = {
       .setDescription(
         `Horniness Counter increased, the counter is currently ${HornyCounter["count"]}`
       )
-      .setFooter("Oh God!", "Oh wow!");
+      .setFooter("Oh God!");
     message.channel.send(newEmbed);
   },
 };
