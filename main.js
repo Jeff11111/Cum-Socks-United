@@ -47,7 +47,7 @@ client.on("message", (message) => {
 
   //Try to execute the command.
   try {
-    command.execute(message, args);
+    command.execute(message);
   } catch (error) {
     console.error(error);
   }
