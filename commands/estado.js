@@ -8,7 +8,7 @@ module.exports = {
       .setColor("#B12E50")
       .setTitle("Horniness Meter")
       .setDescription(
-        `Horniness Counter stalemate, the counter is currently ${HornyCounter}`
+        `Horniness Counter stalemate, the counter is currently ${HornyCounter["count"]}`
       )
       .setFooter("Oh Good.");
     message.channel.send(newEmbed);
