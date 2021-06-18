@@ -1,7 +1,7 @@
 var HornyCounter = require("../counter.js");
 
 module.exports = {
-  name: "estado",
+  name: "hornystatus",
   description: "I hate it here.",
   execute(message, args, Discord) {
     const newEmbed = new Discord.MessageEmbed()
@@ -12,7 +12,6 @@ module.exports = {
       )
       .setFooter("Oh Good.");
     message.channel.send(newEmbed);
-    HornyCounter.sub(1);
   },
 };
 
