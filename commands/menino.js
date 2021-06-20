@@ -7,12 +7,12 @@ module.exports = {
     HornyCounter.add(1);
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#B12E50")
-      .setTitle("Caught you!")
-      .setThumbnail('https://cdn.discordapp.com/attachments/839740718690861096/855298044756361245/alter.png')
+      .setTitle("Horny: SPOTTED!")
+      .setThumbnail('https://cdn.discordapp.com/emojis/845359661300318218.png?v=1')
       .setDescription(
         `Horniness Counter exceeded! the counter is currently ${HornyCounter["count"]}`
       )
-      .setFooter("Oh God!", 'https://cdn.discordapp.com/emojis/681543213990805561.png?v=1');
+      .setFooter("THE SUFFERING OF IT ALL!", 'https://cdn.discordapp.com/emojis/848353013491957812.png?v=1');
     message.channel.send(newEmbed);
   },
 };
